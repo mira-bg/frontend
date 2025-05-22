@@ -1,0 +1,11 @@
+Tirolo: Playfair Display (elegante e classico)
+testo: Lato o Open Sans (leggibili e moderni)
+img:
+palette:    #1e2925	(30,41,37) navbar
+            #3d524b	(61,82,75)  background
+            #416269	(65,98,105) 
+            #5f8586	(95,133,134) h1
+            #9cbbb3	(156,187,179) p
+background:
+footer:
+navbar:

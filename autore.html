@@ -1,13 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autore</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autore</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+
+    .autore {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .autore img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .storia {
+      margin-top: 24px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 12px;
+      background-color: #f0f0f0;
+      border-top: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
-    <h1>Nome Autore</h1>
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+  <h2>Nome Autore</h2>
+  <div class="autore">
+    <div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <img src="/immagini/download.webp" alt="Immagine Autore">
+  </div>
+
+  <div class="storia">
+    <h2>Storia</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </div>
+
+  <footer>
+    router
+  </footer>
 
 </body>
 </html>
