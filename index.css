@@ -48,7 +48,7 @@ nav .logo {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 /* Stile dei link */
@@ -63,7 +63,7 @@ nav .logo {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
     transition: color 0.3s ease;
 }
 
