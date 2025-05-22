@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 html {
     scroll-behavior: smooth;
@@ -49,7 +48,7 @@ nav .logo {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
 }
 
 /* Stile dei link */
@@ -326,8 +325,9 @@ footer {
 
 h2{
     font-size: 60px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
+    
 
 .btn {
     display: inline-block;
