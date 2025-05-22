@@ -69,7 +69,7 @@ nav .logo {
 }
 
 .nav-links li a:hover {
-    color: #ffcc00;
+    color: #9cbbb3;
 }
 
 /* Hamburger Menu (Solo su Mobile) */
@@ -156,14 +156,15 @@ nav ul li a {
     text-align: center;
     color: #fff;
     margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
 }
 .hero h1, .hero p {
     white-space: nowrap; /* Evita che vada a capo */
     overflow: hidden;
     display: inline-block;
 }
-
+h1{
+    font-size: 10vw;
+}
 @keyframes blink {
     50% { opacity: 0; }
 }
@@ -174,7 +175,6 @@ nav ul li a {
     line-height: 1.2;
     margin: 0 auto;
     padding: 0 20px;
-    white-space: nowrap;  /* Impedisce il ritorno a capo */
     overflow: hidden;     /* Impedisce che il testo esca dal contenitore */
     text-overflow: ellipsis; /* Punto di sospensione se il testo è troppo lungo */
 }
@@ -210,28 +210,6 @@ nav ul li a {
     #hero-subtitle {
         font-size: 4vw !important; /* Aumenta la dimensione del font per schermi medi */
     }
-}
-
-/* Cursore per l'effetto typewriter */
-.cursor {
-    animation: blink 0.75s step-end infinite;
-}
-
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background-color: #fff;
-    color: #000;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 5px;
 }
 
 .section {
@@ -312,56 +290,9 @@ nav ul li a {
     margin: 0;
     padding: 0;
     font-size: 80px; /* Ingrandiamo il testo */
-    font-family: 'Bebas Neue', sans-serif; /* Usare il font Bebas Neue */
     color: white; /* Colore del testo bianco */
     line-height: 1; /* Interlinea più spaziosa */
 }
-
-/* Per i blocchi pari (testo a sinistra, immagine a destra) */
-.intro-block:nth-child(even) {
-    flex-direction: row-reverse; /* Invertiamo il blocco */
-}
-
-.intro-block:nth-child(even) .text {
-    text-align: right; /* Allinea il testo a sinistra per i blocchi pari */
-}
-
-.intro-block:nth-child(even) .image {
-    text-align: right; /* L'immagine va a destra */
-}
-
-/* Per i blocchi dispari (testo a destra, immagine a sinistra) */
-.intro-block:nth-child(odd) {
-    flex-direction: row; /* Impostiamo l'ordine normale */
-}
-
-.intro-block:nth-child(odd) .text {
-    text-align: left; /* Allinea il testo a destra per i blocchi dispari */
-}
-
-.intro-block:nth-child(odd) .image {
-    text-align: left; /* L'immagine va a sinistra */
-}
-
-@media (max-width: 768px) {
-    /* Rende ogni blocco verticale (testo sopra, immagine sotto) */
-    .intro-block {
-        flex-direction: column; /* Immagine sotto il testo */
-        width: 100%; /* Ogni blocco occupa il 100% della larghezza */
-    }
-
-    /* Impostiamo l'immagine a larghezza 100% e la centriamo */
-    .intro-block img {
-        width: 100%; /* L'immagine occupa tutta la larghezza disponibile */
-    }
-
-    /* Allineiamo il testo al centro per dispositivi mobili */
-    .intro-block p {
-        text-align: center;
-        font-size: 20px; /* Font più piccolo sui dispositivi mobili */
-    }
-}
-
 
 .schede {
     text-align: center;
@@ -396,116 +327,6 @@ footer {
 h2{
     font-size: 60px;
     font-family: 'Oswald', sans-serif;
-}
-.consulenza-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    flex-wrap: wrap;
-}
-
-.consulenza {
-    background-color: #000;  /* Rettangolo nero */
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    width: 250px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    margin: 20px;
-}
-
-.consulenza h3 {
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-}
-
-.consulenza p {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #ddd;
-}
-
-.prezzo {
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ddd;
-    margin-bottom: 15px;
-}
-
-.btn-consulenza {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ddd;
-    color: #000;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.btn-consulenza:hover {
-    background-color: #ddd;
-}
-.faq {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 50px 20px;
-}
-
-.faq-item {
-    background: #0f0f0f;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.faq-question {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    margin: 0;
-}
-
-.faq-answer {
-    display: none;
-    margin-top: 10px;
-    font-size: 18px;
-    color: #ddd;
-}
-
-
-.contatti {
-    text-align: center;
-    padding: 30px 20px;
-    background: url('contact-bg.jpg') no-repeat center center/cover;
-    position: relative;
-    color: #fff;
-}
-
-.contatti::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Oscuramento leggero */
-    backdrop-filter: blur(5px); /* Sfocatura per un effetto moderno */
-    z-index: 0;
-}
-
-.contatti h2, .contatti p, .contatti a {
-    position: relative;
-    z-index: 1;
-}
-
-/* Stile per l'elemento attivo */
-.faq-item.active .faq-answer {
-    display: block;
 }
 
 .btn {
