@@ -58,8 +58,7 @@ nav .logo {
     gap: 20px;
     padding-right: 20px;
 }
-
-.nav-links li a {
+.nav-links li a,div a{
     text-decoration: none;
     color: #fff;
     font-size: 18px;
@@ -67,6 +66,9 @@ nav .logo {
     transition: color 0.3s ease;
 }
 
+div a{
+    font-size: 30px;
+}
 .nav-links li a:hover {
     color: #9cbbb3;
 }
