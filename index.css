@@ -1,11 +1,9 @@
-
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #3d524b;
     color: #fff;
     margin: 0;
@@ -48,7 +46,7 @@ nav .logo {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
 }
 
 /* Stile dei link */
@@ -58,15 +56,16 @@ nav .logo {
     gap: 20px;
     padding-right: 20px;
 }
-.nav-links li a,div a{
+.nav-links li a,
+div a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     transition: color 0.3s ease;
 }
 
-div a{
+div a {
     font-size: 30px;
 }
 .nav-links li a:hover {
@@ -108,9 +107,6 @@ div a{
     }
 }
 
-
-
-
 nav ul {
     list-style: none;
     display: flex;
@@ -124,14 +120,14 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .hero {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url('content/img2.jpg') no-repeat center center/cover;
+    background: url("content/img2.jpg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,7 +146,9 @@ nav ul li a {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.hero h1, .hero p, .btn {
+.hero h1,
+.hero p,
+.btn {
     position: relative;
     z-index: 1;
     max-width: 80%;
@@ -158,39 +156,43 @@ nav ul li a {
     color: #fff;
     margin: 0 auto;
 }
-.hero h1, .hero p {
+.hero h1,
+.hero p {
     white-space: nowrap; /* Evita che vada a capo */
     overflow: hidden;
     display: inline-block;
 }
-h1{
+h1 {
     font-size: 10vw;
 }
 @keyframes blink {
-    50% { opacity: 0; }
+    50% {
+        opacity: 0;
+    }
 }
 
 /* Base styling */
-#hero-title, #hero-subtitle {
+#hero-title,
+#hero-subtitle {
     text-align: center;
     line-height: 1.2;
     margin: 0 auto;
     padding: 0 20px;
-    overflow: hidden;     /* Impedisce che il testo esca dal contenitore */
+    overflow: hidden; /* Impedisce che il testo esca dal contenitore */
     text-overflow: ellipsis; /* Punto di sospensione se il testo è troppo lungo */
 }
 
 /* Responsive typography: si adatta in base alla larghezza della finestra */
 #hero-title {
-    font-size: 4vw !important;  /* Ridotto al 3% della larghezza della finestra */
+    font-size: 4vw !important; /* Ridotto al 3% della larghezza della finestra */
     max-width: 100%;
-    white-space: normal;  /* Permette al testo di andare a capo su schermi piccoli */
+    white-space: normal; /* Permette al testo di andare a capo su schermi piccoli */
 }
 
 #hero-subtitle {
-    font-size: 2vw !important;  /* Ridotto al 2% della larghezza della finestra */
+    font-size: 2vw !important; /* Ridotto al 2% della larghezza della finestra */
     max-width: 100%;
-    white-space: normal;  /* Permette al testo di andare a capo su schermi piccoli */
+    white-space: normal; /* Permette al testo di andare a capo su schermi piccoli */
 }
 
 /* Modifiche per dispositivi molto piccoli (sotto i 480px) */
@@ -242,22 +244,23 @@ h1{
     padding: 50px 20px;
     max-width: 80%;
     margin: 0 auto;
-    
 }
 
-.intro h2, .intro p {
+.intro h2,
+.intro p {
     max-width: 100%;
     font-size: 28px;
     font-weight: 600;
     line-height: 1.6;
 }
-.intro h2{
+.intro h2 {
     font-size: 60px;
 }
 /* Impostiamo la sezione principale */
 .intro-images {
     display: flex;
     flex-direction: column; /* I blocchi sono disposti in colonna */
+    background-image: url("./background.jpg");
 }
 
 /* Ogni blocco di testo e immagine */
@@ -266,11 +269,11 @@ h1{
     width: 100%;
     margin-bottom: 0; /* Rimuoviamo margine tra i blocchi */
     background-color: #0f0f0f;
-    
 }
 
 /* Le immagini e il testo occupano metà della larghezza */
-.text, .image {
+.text,
+.image {
     width: 50%;
     display: flex;
     align-items: center;
@@ -325,17 +328,16 @@ footer {
     margin: 0 auto;
 }
 
-h2{
+h2 {
     font-size: 60px;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
 }
-    
 
 .btn {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 30px;
-    background: #ddd; 
+    background: #ddd;
     color: #000;
     text-decoration: none;
     font-size: 22px;
