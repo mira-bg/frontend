@@ -1,3 +1,5 @@
+/* --- all.css con integrazione art.css --- */
+
 html {
     scroll-behavior: smooth;
 }
@@ -175,9 +177,20 @@ h1 {
 }
 
 h2 {
-    font-size: 60px;
-    font-family: "Playfair Display", serif;
-    font-weight: 700;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fff;
 }
 
 @keyframes blink {
@@ -329,12 +342,12 @@ h2 {
 }
 
 footer {
-    text-align: center;
-    padding: 30px 0;
-    background-color: #000;
-    font-size: 16px;
-    width: 100%;
-    margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #aaa;
+  font-size: 14px;
+  border-top: 1px solid #444;
 }
 
 p {
@@ -443,28 +456,9 @@ form {
 .flex-column {
     flex: 1;
     padding: 20px;
-    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    background:  #416269;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.flex-column h3 {
-    color: #d63384;
-    margin-top: 0;
-    font-family: "Playfair Display", serif;
-    font-weight: 700;
-}
-
-/* Mantieni compatibilità con container-opere esistente */
-.container-opere {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #999;
-    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border: none; /* Rimuove il bordo grigio originale */
 }
 
 /* Responsive per layout flex */
@@ -487,10 +481,10 @@ form {
     }
 }
 
+/* Grid container */
 .grid-container {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: repeat(3, auto); /* 3 righe per colonna */
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 40px 20px;
     max-width: 1200px;
@@ -516,3 +510,181 @@ form {
     margin-bottom: 15px;
 }
 
+/* Testo nelle colonne flex */
+.flex-column p,
+.storia-column p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #f1f1f1;
+}
+
+.flex-column,
+.storia-column {
+  padding-left: 25px;
+}
+
+/* Colonne storia */
+.storia-columns {
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.storia-column {
+  flex: 1;
+  padding: 20px;
+  background: #416269;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* --- INTEGRAZIONE da art.css --- */
+
+/* Opera container */
+.opera-container,
+.autori-container,
+.mappa-container {
+  max-width: 1100px;
+  margin: 80px auto 40px;
+  padding: 0 30px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.opera-container {
+  display: flex;
+  margin-top: 110px; /* da art.css */
+  gap: 30px;
+  align-items: flex-start;
+  padding: 0 30px;
+  /* max-width e margin già sopra */
+}
+
+.opera-image {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.opera-text {
+  flex: 1;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.opera-text h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.opera-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Autori container */
+.autori-container {
+  /* max-width e margin sopra */
+  padding: 0 30px;
+  font-family: Arial, sans-serif;
+  color: #333; /* NOTA: differente da all.css dove è #fff, qui rimane #333 */
+}
+
+.autori-container h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.autori-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.autore {
+  text-align: center;
+}
+
+.autore img {
+  width: 120px; /* Da art.css: 120px, (precedentemente 150px ma sovrascritto) */
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  filter: blur(1px);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.autore:hover img {
+  transform: scale(1.05);
+  filter: blur(0);
+}
+
+.autore-nome {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Mappa container */
+.mappa-container {
+  /* max-width e margin già sopra */
+  padding: 0 30px;
+}
+
+.mappa-container h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* RESPONSIVITÀ da art.css */
+@media (max-width: 768px) {
+  .opera-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .opera-container p {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .opera-image {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .opera-text {
+    text-align: center;
+  }
+
+  .autori-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .autore img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .mappa-container iframe {
+    height: 300px;
+  }
+}
