@@ -10,11 +10,11 @@
 <body>
      <header>
     <nav>
-        <div class="logo"><a href="#mira">Mira-bg</a></div> 
+        <div class="logo"><a href="./index.html">Mira-BG</a></div> 
         <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         <ul class="nav-links">
-            <li><a href="#cosa">Cos'é</a></li>
-            <li><a href="#chi-siamo">Chi Siamo</a></li>
+            <li><a href="#posizione">Posizione</a></li>
+            <li><a href="#autori">Autori</a></li>
         </ul>
     </nav>
 </header>
@@ -29,7 +29,7 @@
     </div>
 
 
-  <div class="mappa-container">
+  <div class="mappa-container" id="posizione">
     <h2>Posizione</h2>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.815298876155!2d9.667304876712453!3d45.694678518030635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47815110191e7be7%3A0x700a5ce57b8a7ca0!2sMonumento%20Al%20Partigiano!5e0!3m2!1sit!2sit!4v1747899571606!5m2!1sit!2sit"
@@ -37,24 +37,25 @@
       loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
- 
-  <div class="autori-container">
-    <h3>Autori</h3>
-    <div class="autori-grid">
-        <div class="autore">
-            <img src="./images/download.jpg" alt="Autore 1" />
-            <div class="autore-nome">Autore 1</div>
+    <section id="autori">
+        <div class="autori-container">
+        <h3>Autori</h3>
+            <div class="autori-grid">
+                <div class="autore">
+                    <img src="./images/download.jpg" alt="Autore 1" />
+                    <div class="autore-nome">Autore 1</div>
+                </div>
+                <div class="autore">
+                    <img src="./images/download.jpg" alt="Autore 2" />
+                    <div class="autore-nome">Autore 2</div>
+                </div>
+                <div class="autore">
+                    <img src="./images/download.jpg" alt="Autore 3" />
+                    <div class="autore-nome">Autore 3</div>
+                </div>
+            </div>
         </div>
-        <div class="autore">
-            <img src="./images/download.jpg" alt="Autore 2" />
-            <div class="autore-nome">Autore 2</div>
-        </div>
-        <div class="autore">
-            <img src="./images/download.jpg" alt="Autore 3" />
-            <div class="autore-nome">Autore 3</div>
-        </div>
-    </div>
-</div>
+    </section>    
     <footer>
         <p>© 2025 Mira-bg - Tutti i diritti riservati</p>
     </footer>
