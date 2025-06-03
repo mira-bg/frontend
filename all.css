@@ -704,3 +704,37 @@ form {
     height: 300px;
   }
 }
+
+#opere .autori-container h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: var(--color-text);
+}
+
+#opere .autori-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#opere .autore {
+  text-align: center;
+  width: 200px;
+}
+
+#opere .autore img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+#opere .autore-nome {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--color-text);
+}
